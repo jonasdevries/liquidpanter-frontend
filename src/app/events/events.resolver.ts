@@ -14,7 +14,7 @@ export class EventsResolver implements Resolve<any> {
 
   constructor(private eventService: EventsService) {}
 
-  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<any> {
+  resolve(route: ActivatedRouteSnapshot): Observable<any> {
     return this.eventService.getAllEvents();
   }
 }

@@ -10,10 +10,10 @@ export class EventsComponent implements OnInit {
 
   data: any;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.data = this.route.snapshot.data;
+    this.data = this.activatedRoute.snapshot.data;
     console.log(this.data)
   }
 
